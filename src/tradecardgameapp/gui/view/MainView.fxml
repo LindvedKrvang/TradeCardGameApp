@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="230.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tradecardgameapp.gui.controller.MainController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="165.0" prefWidth="183.0">
+         <children>
+            <Button layoutX="86.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleHealthUpButton" text="+" />
+            <Button layoutX="129.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleHealthDownButton" prefHeight="31.0" prefWidth="30.0" text="-" />
+            <Button layoutX="129.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleDamageDownOne" prefHeight="31.0" prefWidth="30.0" text="-" />
+            <Button layoutX="86.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleDamageUpOne" text="+" />
+            <TextField fx:id="txtHealthOne" alignment="CENTER" layoutX="14.0" layoutY="44.0" prefHeight="31.0" prefWidth="65.0" promptText="Health" style="-fx-background-radius: 25, 25, 25, 25;" />
+            <TextField fx:id="txtDamageOne" alignment="CENTER" layoutX="14.0" layoutY="101.0" prefHeight="31.0" prefWidth="65.0" promptText="Damage" style="-fx-background-radius: 25, 25, 25, 25;" />
+            <Label fx:id="lblNameOne" alignment="CENTER" layoutX="9.0" layoutY="14.0" prefHeight="21.0" prefWidth="170.0" text="NameOne">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="197.0" layoutY="14.0" prefHeight="165.0" prefWidth="183.0">
+         <children>
+            <Button layoutX="86.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleHealthUpTwo" text="+" />
+            <Button layoutX="129.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleHealthDownTwo" prefHeight="31.0" prefWidth="30.0" text="-" />
+            <Button layoutX="129.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleDamageDownTwo" prefHeight="31.0" prefWidth="30.0" text="-" />
+            <Button layoutX="86.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleDamageUpTwo" text="+" />
+            <TextField fx:id="txtHealthTwo" alignment="CENTER" layoutX="14.0" layoutY="44.0" prefHeight="31.0" prefWidth="65.0" promptText="Health" style="-fx-background-radius: 25, 25, 25, 25;" />
+            <TextField fx:id="txtDamageTwo" alignment="CENTER" layoutX="14.0" layoutY="101.0" prefHeight="31.0" prefWidth="65.0" promptText="Damage" style="-fx-background-radius: 25, 25, 25, 25;" />
+            <Label fx:id="lblNameTwo" alignment="CENTER" layoutX="9.0" layoutY="14.0" prefHeight="21.0" prefWidth="170.0" text="NameTwo">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnNewGame" layoutX="239.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleNewGame" prefHeight="31.0" prefWidth="100.0" text="New Game" />
+      <Button layoutX="56.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleMenuButton" prefHeight="31.0" prefWidth="100.0" text="Menu" />
+   </children>
+</AnchorPane>
